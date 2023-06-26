@@ -51,6 +51,6 @@ if youtube_link:
         with st.spinner('Preparando vídeo do YouTube para download...'):
             video_data = open(video_file_path, 'rb').read()
             sleep(3)
-            st.spinner('Gerando arquivo para download')
-            st.info('Arquivo pronto para download, Clique no botão abaixo:')
+            st.spinner(' Aguarde... Gerando arquivo para download')
+            st.info('Vídeo pronto para download, Clique no botão abaixo:')
             st.download_button(label="Clique aqui para baixar o vídeo ", data=video_data, file_name="youtube_video.mp4", mime="video/mp4")
