@@ -37,7 +37,7 @@ def download_youtube_video(url):
             video_url = ydl.prepare_filename(info_dict)
             return video_url
     except DownloadError:
-        st.error("Ocorreu um erro ao tentar baixar o vídeo. Por favor, verifique o link e tente novamente.")
+        st.error("Ocorreu um erro ao tentar baixar o vídeo. Por favor, verifique o link e tente novamente ou insira um novo link..")
         return None
 
 if video_file is not None:
