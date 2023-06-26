@@ -65,7 +65,7 @@ with col2:
                 audio_file = f"{video_file_path}.mp3"
                 audio_clip.write_audiofile(audio_file)
                 audio_data = open(audio_file, 'rb').read()
-                st.audio(audio_data, format='audio/mp3```python
+                st.audio(audio_data, format='audio/mp3
                 st.download_button(label="Download YouTube MP3", data=audio_data, file_name="youtube_output.mp3", mime="audio/mpeg")
 
         if st.button('Download YouTube Video'):
