@@ -45,3 +45,6 @@ if youtube_link:
             audio_data = open(audio_file, 'rb').read()
             st.audio(audio_data, format='audio/mp3')
             st.download_button(label="Download YouTube MP3", data=audio_data, file_name="youtube_output.mp3", mime="audio/mpeg")
+
+st.markdown("___")
+st.markdown("in development by Mauro Alves:")
