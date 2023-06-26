@@ -5,8 +5,6 @@ import os
 from yt_dlp import YoutubeDL
 from time import sleep
 
-st.title('Vídeo para Áudio: Ferramenta de Conversão')
-
 if st.sidebar.checkbox('Mostrar instruções de uso'):
     st.sidebar.write("""
     1. **Carregar um arquivo de vídeo:** Clique no botão "Carregar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, .wmv).
