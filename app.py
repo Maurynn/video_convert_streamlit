@@ -62,9 +62,6 @@ if youtube_link:
         st.video(video_file_path)
 
         if st.button('Converter YouTube para MP3'):
-O texto foi cortado novamente. Aqui está o final do código:
-
-```python
             with st.spinner('Convertendo vídeo do YouTube...'):
                 audio_clip = video_clip.audio
                 audio_file = f"{video_file_path}.mp3"
