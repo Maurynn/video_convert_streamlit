@@ -4,9 +4,7 @@ import tempfile
 import os
 from yt_dlp import YoutubeDL
 
-st.markdown("<h1 style='text-align: center; color: purple;'>📽️ Conversor de Vídeo para Áudio 🎶</h1>", unsafe_allow_html=True)
-
-#st.title('🎥 Conversor de Vídeo para Áudio 🎶')
+st.title('Conversor de Vídeo para Áudio')
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
@@ -48,5 +46,7 @@ if youtube_link:
             st.audio(audio_data, format='audio/mp3')
             st.download_button(label="Download YouTube MP3", data=audio_data, file_name="youtube_output.mp3", mime="audio/mpeg")
 
-st.markdown("___")
-st.markdown("in development by Mauro Alves:")
+    if st.button('Download YouTube Video'):
+        with st.spinner('Preparando vídeo do YouTube para download...'):
+            video_data = open(video_file_path, 'rb').read()
+            st.download_button(label="Download YouTube Video", data=video_data, file_name="youtube_video.mp4", mime="video/mp4")
