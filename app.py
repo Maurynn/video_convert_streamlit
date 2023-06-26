@@ -4,7 +4,6 @@ import tempfile
 import os
 from yt_dlp import YoutubeDL
 from time import sleep
-from yt_dlp.utils import DownloadError
 
 st.set_page_config(layout='wide')
 
@@ -23,42 +22,40 @@ if st.sidebar.checkbox('Mostrar instruções de uso'):
     5. **Download de vídeo:** Se você inseriu um link do YouTube, também poderá baixar o vídeo original clicando no botão "Download vídeo".
     
     Se você tiver qualquer dúvida ou problema, entre em contato com o suporte.
-Email: mauro.mn@hotmail.com
     """)
 
-video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
+# Create two columns
+col1, col2 = st.columns(2)
 
-youtube_link = st.text_input('Ou, insira um link do YouTube e aperte Enter.')
+with col1:
+    video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
+    youtube_link = st.text_input('Ou, insira um link do YouTube e aperte Enter.')
 
-def download_youtube_video(url):
-    try:
+with col2:
+    def download_youtube_video(url):
         ydl_opts = {'outtmpl': 'downloaded_videos/%(title)s.%(ext)s'}
         with YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(url, download=True)
             video_url = ydl.prepare_filename(info_dict)
             return video_url
-    except DownloadError:
-        st.error("Ocorreu um erro ao tentar baixar o vídeo. Por favor, verifique o link e tente novamente ou insira um novo link..")
-        return None
 
-if video_file is not None:
-    tfile = tempfile.NamedTemporaryFile(delete=False) 
-    tfile.write(video_file.read())
-    
-    video_clip = VideoFileClip(tfile.name)
+    if video_file is not None:
+        tfile = tempfile.NamedTemporaryFile(delete=False) 
+        tfile.write(video_file.read())
+        
+        video_clip = VideoFileClip(tfile.name)
 
-    if st.button('Converter para MP3'):
-        with st.spinner('Convertendo vídeo...'):
-            audio_clip = video_clip.audio
-            audio_file = f"{tfile.name}.mp3"
-            audio_clip.write_audiofile(audio_file)
-            audio_data = open(audio_file, 'rb').read()
-            st.audio(audio_data, format='audio/mp3')
-            st.download_button(label="Download MP3", data=audio_data, file_name="output.mp3", mime="audio/mpeg")
+        if st.button('Converter para MP3'):
+            with st.spinner('Convertendo vídeo...'):
+                audio_clip = video_clip.audio
+                audio_file = f"{tfile.name}.mp3"
+                audio_clip.write_audiofile(audio_file)
+                audio_data = open(audio_file, 'rb').read()
+                st.audio(audio_data, format='audio/mp3')
+                st.download_button(label="Download MP3", data=audio_data, file_name="output.mp3", mime="audio/mpeg")
 
-if youtube_link:
-    video_file_path = download_youtube_video(youtube_link)
-    if video_file_path is not None:
+    if youtube_link:
+        video_file_path = download_youtube_video(youtube_link)
         video_clip = VideoFileClip(video_file_path)
         st.video(video_file_path)
 
@@ -68,7 +65,7 @@ if youtube_link:
                 audio_file = f"{video_file_path}.mp3"
                 audio_clip.write_audiofile(audio_file)
                 audio_data = open(audio_file, 'rb').read()
-                st.audio(audio_data, format='audio/mp3')
+                st.audio(audio_data, format='audio/mp3```python
                 st.download_button(label="Download YouTube MP3", data=audio_data, file_name="youtube_output.mp3", mime="audio/mpeg")
 
         if st.button('Download YouTube Video'):
