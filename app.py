@@ -8,7 +8,7 @@ st.title('Conversor de Vídeo para Áudio')
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
-youtube_link = st.text_input('Ou, insira um link do YouTube')
+youtube_link = st.text_input('insira um link do YouTube')
 
 def download_youtube_video(url):
     ydl_opts = {'outtmpl': 'downloaded_videos/%(title)s.%(ext)s'}
