@@ -4,7 +4,9 @@ import tempfile
 import os
 from yt_dlp import YoutubeDL
 
-st.title('🎥 Conversor de Vídeo para Áudio 🎶')
+st.markdown("<h1 style='text-align: center; color: orange;'>🎥 Conversor de Vídeo para Áudio 🎶</h1>", unsafe_allow_html=True)
+
+#st.title('🎥 Conversor de Vídeo para Áudio 🎶')
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
