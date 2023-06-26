@@ -49,7 +49,7 @@ if youtube_link:
 
     if st.button('Download YouTube Video'):
         with st.spinner('Preparando vídeo do YouTube para download...'):
-            #sleep(3)
+            sleep(3)
             video_data = open(video_file_path, 'rb').read()
             
             st.info('Vídeo pronto para download, Clique no botão abaixo:')
