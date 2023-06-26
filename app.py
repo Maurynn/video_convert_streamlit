@@ -78,3 +78,6 @@ if youtube_link:
                 
                 st.info('Vídeo pronto para download, Clique no botão abaixo:')
                 st.download_button(label="Clique aqui para baixar o vídeo ", data=video_data, file_name="youtube_video.mp4", mime="video/mp4")
+
+st.markdown("___")
+st.markdown("in development by: Mauro Alves:")
