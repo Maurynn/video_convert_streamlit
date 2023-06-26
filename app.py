@@ -4,7 +4,7 @@ import tempfile
 import os
 from yt_dlp import YoutubeDL
 
-st.markdown("<h1 style='text-align: center; color: orange;'>📽️ Conversor de Vídeo para Áudio 🎶</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: green;'>📽️ Conversor de Vídeo para Áudio 🎶</h1>", unsafe_allow_html=True)
 
 #st.title('🎥 Conversor de Vídeo para Áudio 🎶')
 
