@@ -6,6 +6,7 @@ from yt_dlp import YoutubeDL
 from time import sleep
 
 
+st.set_page_config(layout='wide')
 
 st.markdown("<h1 style='text-align: center; color: orange;'>📽️ Video Converter 🎶</h1>", unsafe_allow_html=True)
 
