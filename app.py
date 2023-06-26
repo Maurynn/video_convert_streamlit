@@ -41,9 +41,6 @@ def download_youtube_video(url, is_playlist=False):
             else:
                 video_url = ydl.prepare_filename(info_dict)
                 return video_url
-    exceptDesculpe pelo erro de formatação. Aqui está o final do código:
-
-```python
     except DownloadError:
         st.error("Erro ao baixar o vídeo do YouTube. Por favor, verifique o link e tente novamente.")
         return None
