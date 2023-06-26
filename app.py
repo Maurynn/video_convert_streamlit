@@ -5,11 +5,11 @@ import os
 from yt_dlp import YoutubeDL
 from time import sleep
 
-st.markdown("<h1 style='text-align: left; color: orange;'>📽️ Conversor de Vídeo para Áudio 🎶</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: left; color: orange;'>📽️ Video Converter 🎶</h1>", unsafe_allow_html=True)
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
-youtube_link = st.text_input('Ou, insira um link do YouTube')
+youtube_link = st.text_input('Ou, insira um link do YouTube e aperte Enter.')
 
 def download_youtube_video(url):
     ydl_opts = {'outtmpl': 'downloaded_videos/%(title)s.%(ext)s'}
