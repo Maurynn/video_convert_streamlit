@@ -5,6 +5,10 @@ import os
 from yt_dlp import YoutubeDL
 from time import sleep
 
+
+
+st.markdown("<h1 style='text-align: center; color: orange;'>📽️ Video Converter 🎶</h1>", unsafe_allow_html=True)
+
 if st.sidebar.checkbox('Mostrar instruções de uso'):
     st.sidebar.write("""
     1. **Carregar um arquivo de vídeo:** Clique no botão "Carregar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, .wmv).
@@ -19,11 +23,6 @@ if st.sidebar.checkbox('Mostrar instruções de uso'):
     
     Se você tiver qualquer dúvida ou problema, entre em contato com o suporte.
     """)
-
-video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
-youtube_link = st.text_input('Ou, insira um link do YouTube')
-
-st.markdown("<h1 style='text-align: center; color: orange;'>📽️ Video Converter 🎶</h1>", unsafe_allow_html=True)
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
