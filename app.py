@@ -39,6 +39,9 @@ if st.sidebar.checkbox('Mostrar instruções de uso'):
 Email: mauro.mn@hotmail.com
     """)
 
+st.markdown('')
+
+
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
 youtube_link = st.text_input('Ou, insira um link do YouTube e aperte Enter.')
