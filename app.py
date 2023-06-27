@@ -7,7 +7,7 @@ from time import sleep
 from yt_dlp.utils import DownloadError
 
 
-#st.set_page_config(layout='wide')
+st.set_page_config(layout='wide')
 
 st.markdown("<h1 style='text-align: center; color: orange;'>📽️ VIDEO CONVERTER 🎶</h1>", unsafe_allow_html=True)
 
