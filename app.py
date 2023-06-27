@@ -24,11 +24,9 @@ st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', uns
 st.markdown("___")
 
 
-video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Selecione o arquivo de vídeo que você deseja converter para áudio.")
-
-
 youtube_link = st.text_input('Ou, insira um link do YouTube e aperte Enter.', help="Clique em compartilhar no vídeo do YouTube e copie o link que será colado aqui... Também funciona com vídeos do Facebook.")
 
+video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Selecione o arquivo de vídeo que você deseja converter para áudio.")
 
 def download_youtube_video(url):
     try:
