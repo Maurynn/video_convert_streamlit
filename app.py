@@ -14,7 +14,7 @@ st.markdown("""
         font-weight: bold;
         text-align: center;
         color: orange;
-        text-shadow: 3px 3px 3px grey;
+        text-shadow: 2px 2px 2px grey;
     }
 </style>
 """, unsafe_allow_html=True)
