@@ -7,7 +7,7 @@ from time import sleep
 from yt_dlp.utils import DownloadError
 
 
-background_image = "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
+background_image = "https://drive.google.com/file/d/1v1Ofrln1yPIssByIbCZSKCRAkR7HNnb0/view?usp=drivesdk"
 
 st.markdown(
     f"""
