@@ -21,6 +21,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
+st.markdown("___")
 
 
 if st.sidebar.checkbox('Mostrar instruções de uso'):
