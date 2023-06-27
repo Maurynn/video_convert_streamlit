@@ -41,8 +41,6 @@ Email: mauro.mn@hotmail.com
     """)
 
 
-st.markdown('')
-
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo", type=['mp4', 'mov', 'avi', 'flv', 'wmv'])
 
