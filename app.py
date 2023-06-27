@@ -7,22 +7,6 @@ from time import sleep
 from yt_dlp.utils import DownloadError
 
 
-background_image = "https://images.pexels.com/photos/17370371/pexels-photo-17370371.png"
-
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url({background_image});
-        background-size: cover;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-
-
 #st.set_page_config(layout='wide')
 
 st.markdown("<h1 style='text-align: center; color: orange;'>📽️ VIDEO CONVERTER 🎶</h1>", unsafe_allow_html=True)
