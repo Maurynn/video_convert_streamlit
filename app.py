@@ -39,6 +39,8 @@ if st.sidebar.checkbox('Mostrar instruções de uso'):
 Email: mauro.mn@hotmail.com
     """)
 
+
+
 st.markdown('')
 st.markdown('')
 st.markdown('')
