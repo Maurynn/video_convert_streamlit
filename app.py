@@ -13,6 +13,7 @@ st.markdown("""
         font-size:50px !important;
         font-weight: bold;
         text-align: center;
+        color: cyan;
         text-shadow: 3px 3px 3px grey;
     }
 </style>
