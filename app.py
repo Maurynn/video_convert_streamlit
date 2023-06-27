@@ -9,7 +9,7 @@ from yt_dlp.utils import DownloadError
 
 st.set_page_config(layout='wide')
 
-st.markdown("<h1 style='text-align: center; color: cyan;'>📽️ VIDEO CONVERTER ONLINE  🎶</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: left; color: cyan;'>📽️ VIDEO CONVERTER ONLINE  🎶</h1>", unsafe_allow_html=True)
 
 
 if st.sidebar.checkbox('Mostrar instruções de uso'):
