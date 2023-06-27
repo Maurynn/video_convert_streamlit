@@ -11,7 +11,7 @@ st.markdown("""
     .big-font {
         font-size:50px !important;
         font-weight: bold;
-        color:orange;  # Use qualquer cor que você goste
+        color:blue;  # Use qualquer cor que você goste
         text-shadow: 3px 3px 3px whyte;
         text-align: center;  # Centraliza o texto
     }
