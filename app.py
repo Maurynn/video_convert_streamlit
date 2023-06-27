@@ -6,6 +6,21 @@ from yt_dlp import YoutubeDL
 from time import sleep
 from yt_dlp.utils import DownloadError
 
+background_image = "https://drive.google.com/file/d/1v1Ofrln1yPIssByIbCZSKCRAkR7HNnb0/view?usp=drivesdk"
+
+st.markdown(
+    f"""
+    <style>
+    .reportview-container {{
+        background: url({background_image});
+        background-size: cover;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 st.set_page_config(layout='wide')
 
 st.markdown("<h1 style='text-align: center; color: orange;'>📽️ VIDEO CONVERTER 🎶</h1>", unsafe_allow_html=True)
