@@ -7,9 +7,23 @@ from time import sleep
 from yt_dlp.utils import DownloadError
 
 
+st.markdown("""
+<style>
+    .big-font {
+        font-size:50px !important;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px grey;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="big-font">Conversor de Vídeo para Áudio</p>', unsafe_allow_html=True)
+
+
+
 st.set_page_config(layout='wide')
 
-st.markdown("<h1 style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
 
 
 if st.sidebar.checkbox('Mostrar instruções de uso'):
