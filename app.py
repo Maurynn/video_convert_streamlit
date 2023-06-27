@@ -21,9 +21,9 @@ st.markdown('<p class="big-font">Conversor de Vídeo para Áudio</p>', unsafe_al
 
 
 
-st.set_page_config(layout='wide')
+#st.set_page_config(layout='wide')
 
-st.markdown("<h1 style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
 
 
 if st.sidebar.checkbox('Mostrar instruções de uso'):
