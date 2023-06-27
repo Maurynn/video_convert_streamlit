@@ -19,7 +19,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="big-font">VIDEO CONVERTER ONLINE</p>', unsafe_allow_html=True)
+st.markdown('<p1 class="big-font">VIDEO CONVERTER ONLINE</p1>', unsafe_allow_html=True)
 
 
 #st.markdown("<p class="big-font" style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
