@@ -40,8 +40,6 @@ Email: mauro.mn@hotmail.com
     """)
 
 
-
-st.markdown('')
 st.markdown('')
 st.markdown('')
 st.markdown('')
