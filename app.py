@@ -6,6 +6,7 @@ from yt_dlp import YoutubeDL
 from time import sleep
 from yt_dlp.utils import DownloadError
 
+st.set_page_config(layout='wide')
 
 st.markdown("""
 <style>
@@ -20,13 +21,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
-
-
-#st.markdown("<p class="big-font" style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
-
-#st.set_page_config(layout='wide')
-
-#st.markdown("<h1 style='text-align: center; color: grey;'>📽️ VIDEO CONVERTER ONLINE 🎶</h1>", unsafe_allow_html=True)
 
 
 if st.sidebar.checkbox('Mostrar instruções de uso'):
