@@ -8,7 +8,7 @@ from yt_dlp.utils import DownloadError
 
 st.set_page_config(layout='wide')
 
-base="purple"
+base="red"
 primaryColor="dark"
 
 st.markdown("""
