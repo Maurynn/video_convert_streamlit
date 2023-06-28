@@ -6,10 +6,7 @@ from yt_dlp import YoutubeDL
 from time import sleep
 from yt_dlp.utils import DownloadError
 
-st.set_page_config(layout='wide')
-
-base="red"
-primaryColor="dark"
+st.set_page_config(layout='wide', page_icon="📽️")
 
 st.markdown("""
 <style>
