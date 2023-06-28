@@ -84,6 +84,7 @@ with tab1:
     st.markdown("Developed by: Mauro Alves")
 
 with tab2:
+    st.header("Instruções de uso:")
     st.write("""
     1. **Carregar um arquivo de vídeo:** Clique no botão "Carregar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, .wmv).
     
