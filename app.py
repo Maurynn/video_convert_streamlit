@@ -22,9 +22,9 @@ st.markdown("""
 
 st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
 
-tabs = st.tabs(["Home", "Ajuda"])
+tab = st.tabs(["Home", "Ajuda"])
 
-if tabs == 'Home':
+if tab == 'Home':
     st.divider()
     youtube_link = st.text_input('Insira um link do YouTube e aperte Enter:', help="Clique em compartilhar no vídeo do YouTube e copie o link que será colado aqui... Também funciona com vídeos do Facebook.")
 
@@ -83,7 +83,7 @@ if tabs == 'Home':
     st.divider()
     st.markdown("Developed by: Mauro Alves")
 
-elif tabs == 'Ajuda':
+elif tab == 'Ajuda':
     st.write("""
     1. **Carregar um arquivo de vídeo:** Clique no botão "Carregar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, .wmv).
     
