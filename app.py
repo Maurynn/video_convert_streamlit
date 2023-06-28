@@ -6,7 +6,12 @@ from yt_dlp import YoutubeDL
 from time import sleep
 from yt_dlp.utils import DownloadError
 
-st.set_page_config(layout='wide', page_icon="📽️")
+st.set_page_config(layout='wide', page_icon="📽️", menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+                  )
 
 st.markdown("""
 <style>
