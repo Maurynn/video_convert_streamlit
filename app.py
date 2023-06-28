@@ -37,7 +37,7 @@ if st.sidebar.checkbox('Mostrar instruções de uso'):
     Se você tiver qualquer dúvida ou problema, entre em contato com o suporte.
 Email: mauro.mn@hotmail.com
     """)
-
+st.divider()
 youtube_link = st.text_input('Insira um link do YouTube e aperte Enter:', help="Clique em compartilhar no vídeo do YouTube e copie o link que será colado aqui... Também funciona com vídeos do Facebook.")
 
 video_file = st.file_uploader("Carregue um arquivo de vídeo:", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Selecione o arquivo de vídeo que você deseja converter para áudio.")
