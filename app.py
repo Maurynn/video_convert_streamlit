@@ -21,7 +21,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
-st.divider()
 if st.sidebar.checkbox('Mostrar instruções de uso'):
     st.sidebar.write("""
     1. **Carregar um arquivo de vídeo:** Clique no botão "Carregar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, .wmv).
