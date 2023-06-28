@@ -23,7 +23,7 @@ st.markdown("""
 
 #st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
 
-tab1, tab2, tab3 = st.tabs(["Home", "Ajuda", "Idioma"])
+tab1, tab2 = st.tabs(["Home", "Ajuda"])
 
 
 with tab1:
@@ -104,22 +104,3 @@ with tab2:
     Se você tiver qualquer dúvida ou problema, entre em contato com o suporte.
     Email: mauro.mn@hotmail.com
     """)
-with tab3:
-    translator = Translator()
-    languages = {
-    "English": "en",
-    "Português": "pt",
-    "Español": "es",
-    }
-    selected_language = st.selectbox("Escolha o idioma", list(languages.keys()))
-    text = "Este é um teste que será traduzido."
-    translated_text = translator.translate(text, dest=languages[selected_language]).text
-    st.header(translated_text)
-
-
-
-
-
-
-    
-
