@@ -8,6 +8,10 @@ from yt_dlp.utils import DownloadError
 
 st.set_page_config(layout='wide')
 
+[theme]
+base="dark"
+primaryColor="purple"
+
 st.markdown("""
 <style>
     .big-font {
