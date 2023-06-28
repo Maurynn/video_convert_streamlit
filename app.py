@@ -23,7 +23,7 @@ st.markdown("""
 
 #st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
 
-tab1, tab2, tab3 = st.tabs(["Home", "Ajuda", Idioma])
+tab1, tab2, tab3 = st.tabs(["Home", "Ajuda", "Idioma"])
 
 
 with tab1:
