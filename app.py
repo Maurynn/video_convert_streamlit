@@ -7,7 +7,7 @@ from time import sleep
 from yt_dlp.utils import DownloadError
 
 st.set_page_config(layout='wide')
-st.balloons()
+
 base="dark"
 primaryColor="purple"
 
