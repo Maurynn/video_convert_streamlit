@@ -87,6 +87,7 @@ with tab1:
 
     st.divider()
     st.markdown("Developed by: Mauro Alves")
+    "[View the source code](https://github.com/Maurynn/video_convert_streamlit/edit/main/app.py)"
 
 with tab2:
     st.header("Instruções de uso:")
