@@ -5,7 +5,7 @@ import os
 from yt_dlp import YoutubeDL
 from time import sleep
 from yt_dlp.utils import DownloadError
-st.image("imagem/pngwing.com.png")
+st.image("imagens/pngwing.com.png")
 st.set_page_config(layout='wide')
 
 st.markdown("""
