@@ -8,6 +8,24 @@ from yt_dlp.utils import DownloadError
 
 st.set_page_config(layout='wide')
 
+tab1, tab2 = st.tabs(["Home", "Ajuda"])
+
+with tab2:
+
+    st.markdown("""
+    1. **Carregar um arquivo de vídeo:** Clique no botão "Carregar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, .wmv).
+    
+    2. **Inserir um link do YouTube:** Se você preferir, pode simplesmente inserir o link do vídeo do YouTube no campo de entrada "Insira um link do YouTube".
+    
+    3. **Converter para MP3:** Após carregar o arquivo de vídeo ou inserir o link do YouTube, clique no botão "Converter para MP3". O vídeo será convertido em um arquivo de áudio MP3.
+    
+    4. **Download de MP3:** Após a conversão, um botão "Download MP3" aparecerá. Clique nele para baixar o arquivo de áudio MP3 para o seu dispositivo.
+    
+    5. **Download de vídeo:** Se você inseriu um link do YouTube, também poderá baixar o vídeo original clicando no botão "Download vídeo".
+    
+    Se você tiver qualquer dúvida ou problema, entre em contato com o suporte.
+Email: mauro.mn@hotmail.com
+    """)
 st.markdown("""
 <style>
     .big-font {
