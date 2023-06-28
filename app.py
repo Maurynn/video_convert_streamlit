@@ -74,9 +74,7 @@ if tabs == 'Home':
             if st.button('Download YouTube Video'):
                 with st.spinner('Preparando vídeo do YouTube para download...'):
                     sleep(3)
-                   Desculpe pelo corte. Aqui está o restante do código:
-
-```python
+            
                     video_data = open(video_file_path, 'rb').read()
 
                     st.info('Vídeo pronto para download, Clique no botão abaixo:')
