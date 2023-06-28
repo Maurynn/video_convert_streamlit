@@ -27,6 +27,7 @@ tab1, tab2 = st.tabs(["Home", "Ajuda"])
 
 with tab1:
     st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
+    st.divider()
     
     youtube_link = st.text_input('Insira um link do YouTube e aperte Enter:', help="Clique em compartilhar no vídeo do YouTube e copie o link que será colado aqui... Também funciona com vídeos do Facebook.")
 
