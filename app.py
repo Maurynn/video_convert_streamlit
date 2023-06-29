@@ -14,7 +14,7 @@ st.markdown("""
     .big-font {
         font-family: serif;
         font-size:35px !important;
-        
+        font-weight: bold;
         text-align: center;
         color: red;
         border: 1px solid black;
