@@ -41,7 +41,7 @@ with tab1:
                 video_url = ydl.prepare_filename(info_dict)
                 return video_url
         except DownloadError:
-            st.error("Ocorreu um erro ao tentar baixar o vídeo. Por favor, para evitar possíveis erros, clique em compartilhar na página do YouTube e copie o Link gerado...")
+            st.error("⚠️ Ocorreu um erro ao tentar baixar o vídeo. Por favor, para evitar possíveis erros, clique em compartilhar na página do YouTube e copie o Link gerado... Caso persista o erro, tente um outro link...")
             return None
 
     if video_file is not None:
