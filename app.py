@@ -12,7 +12,8 @@ st.set_page_config(layout='wide')
 st.markdown("""
 <style>
     .big-font {
-        font-size:30px !important;
+        font-family: serif;
+        font-size:40px !important;
         font-weight: bold;
         text-align: center;
         color: cyan;
