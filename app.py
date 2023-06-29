@@ -13,10 +13,10 @@ st.markdown("""
 <style>
     .big-font {
         font-family: serif;
-        font-size:40px !important;
+        font-size:35px !important;
         font-weight: bold;
         text-align: center;
-        color: cyan;
+        color: orange;
         text-shadow: 2px 2px 2px grey;
     }
 </style>
