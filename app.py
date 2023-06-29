@@ -17,7 +17,7 @@ st.markdown("""
         font-weight: bold;
         text-align: center;
         color: LightGray;
-        border: 2px solid black;
+        border: 1px #262730;
         text-shadow: 2px 2px 2px grey;
     }
 </style>
