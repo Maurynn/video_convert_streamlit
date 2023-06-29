@@ -12,7 +12,7 @@ st.set_page_config(layout='wide')
 st.markdown("""
 <style>
     .big-font {
-        font-family: monospace;
+        font-family: serif;
         font-size:35px !important;
         font-weight: bold;
         text-align: center;
