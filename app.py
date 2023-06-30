@@ -64,7 +64,7 @@ with tab1:
             video_clip = VideoFileClip(video_file_path)
             st.video(video_file_path)
 
-            if st.button('Converter YouTube para MP3'):
+            if st.button('Converter vídeo para MP3'):
                 with st.spinner('Convertendo vídeo do YouTube...'):
                     audio_clip = video_clip.audio
                     audio_file = f"{video_file_path}.mp3"
