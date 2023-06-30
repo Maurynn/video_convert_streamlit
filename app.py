@@ -26,8 +26,7 @@ st.markdown("""
 tab1, tab2 = st.tabs(["Home", "Ajuda"])
 
 with tab1:
-    #st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
-    st.image("Imagens/youtube-logo-png-46039.png", width=200, heigth=200)
+    st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
     st.divider()
     youtube_link = st.text_input('Insira um link do YouTube e aperte Enter:', placeholder="Cole o link aqui.", help="Clique em compartilhar no vídeo do YouTube e copie o link que será colado aqui... Também funciona com vídeos do Facebook.")
     video_file = st.file_uploader("Carregue um arquivo de vídeo:", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Selecione o arquivo de vídeo que você deseja converter para áudio.")
