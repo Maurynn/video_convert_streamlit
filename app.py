@@ -7,7 +7,8 @@ from time import sleep
 from yt_dlp.utils import DownloadError
 from googletrans import Translator
 
-st.set_page_config(layout='wide')
+# Configuração da página
+st.set_page_config(layout="wide")
 
 st.markdown("""
 <style>
