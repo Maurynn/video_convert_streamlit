@@ -23,7 +23,7 @@ st.markdown("""
     #MainMenu {
         visibility: hidden;
     }
-    .footer {
+    footer {
         visibility: hidden;
     }
 </style>
