@@ -21,10 +21,10 @@ st.markdown("""
         text-shadow: 2px 2px 2px grey;
     }
     #MainMenu {
-            visibility: hidden;
+        visibility: hidden;
     }
     .footer {
-            visibility: hidden;
+        visibility: hidden;
     }
 </style>
 """, unsafe_allow_html=True)
