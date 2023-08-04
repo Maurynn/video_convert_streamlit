@@ -8,7 +8,7 @@ from yt_dlp.utils import DownloadError
 from googletrans import Translator
 
 # Configuração da página
-st.set_page_config(layout="wide", page_icon=None, initial_sidebar_state="collapsed", page_title=None, menu_items={'footer': False})
+
 st.markdown("""
 <style>
     .big-font {
