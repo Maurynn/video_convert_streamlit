@@ -20,9 +20,7 @@ st.markdown("""
         border: 1px solid black;
         text-shadow: 2px 2px 2px grey;
     }
-    #MainMenu {
-        visibility: hidden;
-    }
+    
     footer {
         visibility: hidden;
     }
