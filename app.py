@@ -32,7 +32,7 @@ st.markdown("""
 tab1, tab2 = st.tabs(["Home", "Help"])
 
 with tab1:
-    st.image("Imagens/IMG_20230630_102700.png")
+    st.image("Imagens/pytube-down.png")
     #st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
     st.divider()
     youtube_link = st.text_input('Insert a YouTube link and press Enter:', placeholder="paste the link here.", help="Click share on the YouTube video and copy the link that will be pasted here... It also works with Facebook videos.")
