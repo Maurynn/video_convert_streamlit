@@ -33,7 +33,6 @@ tab1, tab2 = st.tabs(["Home", "Help"])
 
 with tab1:
     st.image("Imagens/pytube-down.png")
-    #st.markdown('<h1 class="big-font">📽️ VIDEO CONVERTER ONLINE 🎶</h1>', unsafe_allow_html=True)
     st.divider()
     youtube_link = st.text_input('Insert a YouTube link and press Enter:', placeholder="paste the link here.", help="Click share on the YouTube video and copy the link that will be pasted here... It also works with Facebook videos.")
     video_file = st.file_uploader("Upload a video file:", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Select the video file you want to convert to audio.")
