@@ -89,7 +89,7 @@ with tab1:
                     st.download_button(label="Click here to download the video", data=video_data, file_name="youtube_video.mp4", mime="video/mp4")
 
     st.divider()
-    st.markdown("Developed by: Mauro Alves")
+    st.markdown("Developed by: Mauro Alves®")
     
     st.markdown("""
         <a href="https://github.com/Maurynn" target="_blank" style="margin-right: 15px; text-decoration: none">
