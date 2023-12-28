@@ -5,7 +5,6 @@ import os
 from yt_dlp import YoutubeDL
 from time import sleep
 from yt_dlp.utils import DownloadError
-from googletrans import Translator
 
 # Configuração da página
 
@@ -29,13 +28,13 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-tab1, tab2 = st.tabs(["Home", "Help"])
+tab1, tab2 = st.tabs(["Home", "Ajuda"])
 
 with tab1:
     st.image("Imagens/pytube-down.png")
     st.divider()
-    youtube_link = st.text_input('Insert a YouTube link and press Enter:', placeholder="paste the link here.", help="Click share on the YouTube video and copy the link that will be pasted here... It also works with Facebook videos.")
-    video_file = st.file_uploader("Upload a video file:", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Select the video file you want to convert to audio.")
+    youtube_link = st.text_input('Insira um link do YouTube e aperte Enter:', placeholder="Cole o link aqui.", help="Clique em compartilhar no vídeo do YouTube e copie o link que será colado aqui... Também funciona com vídeos do Facebook.")
+    video_file = st.file_uploader("Carregue um arquivo de vídeo:", type=['mp4', 'mov', 'avi', 'flv', 'wmv'],help="Selecione o vídeo que deseja converter para áudio.")
 
     def download_youtube_video(url):
         try:
@@ -45,7 +44,7 @@ with tab1:
                 video_url = ydl.prepare_filename(info_dict)
                 return video_url
         except DownloadError:
-            st.error("⚠️ An error occurred while trying to download the video.  Please, to avoid possible errors, click share on the YouTube page and copy the generated link... If the error persists, try another link.")
+            st.error("⚠️ Ocorreu um erro ao tentar baixar o vídeo. Por favor, para evitar possíveis erros, clique em compartilhar na página do YouTube e copie o link gerado... Se o erro persistir, tente outro link.")
             return None
 
     if video_file is not None:
@@ -54,8 +53,8 @@ with tab1:
         
         video_clip = VideoFileClip(tfile.name)
 
-        if st.button('Convert to MP3'):
-            with st.spinner('Converting Video...'):
+        if st.button('Converter para MP3'):
+            with st.spinner('Convertendo Vídeo...'):
                 audio_clip = video_clip.audio
                 audio_file = f"{tfile.name}.mp3"
                 audio_clip.write_audiofile(audio_file)
@@ -69,24 +68,24 @@ with tab1:
             video_clip = VideoFileClip(video_file_path)
             st.video(video_file_path)
 
-            if st.button('Convert video to MP3'):
-                with st.spinner('Converting YouTube Video...'):
+            if st.button('Converter vídeo para MP3'):
+                with st.spinner('Convertendo Vídeo do YouTube...'):
                     audio_clip = video_clip.audio
                     audio_file = f"{video_file_path}.mp3"
                     audio_clip.write_audiofile(audio_file)
                     audio_data = open(audio_file, 'rb').read()
                     st.audio(audio_data, format='audio/mp3')
-                    st.info('Audio ready for download, click the button below:')
+                    st.info('Áudio pronto para download, clique no botão abaixo:')
                     st.download_button(label="Download YouTube MP3", data=audio_data, file_name="youtube_output.mp3", mime="audio/mpeg")
 
             if st.button('Download YouTube Video'):
-                with st.spinner('Preparing YouTube video for download...'):
+                with st.spinner('Preparando vídeo do YouTube para download...'):
                     sleep(3)
             
                     video_data = open(video_file_path, 'rb').read()
 
-                    st.info('Video ready for download, click the button below:')
-                    st.download_button(label="Click here to download the video", data=video_data, file_name="youtube_video.mp4", mime="video/mp4")
+                    st.info('Video pronto para download, clique no botão abaixo:')
+                    st.download_button(label="Clique aqui para baixar o vídeo", data=video_data, file_name="youtube_video.mp4", mime="video/mp4")
 
     st.divider()
     st.markdown("Developed by: Mauro Alves®")
@@ -110,18 +109,18 @@ with tab1:
     #"[View the source code](https://github.com/Maurynn/video_convert_streamlit/blob/main/app.py)"
 
 with tab2:
-    st.header("Instructions for use:")
+    st.header("Instruções de uso:")
     st.write("""
-    1. **Upload a video file:** Click the "Upload a video file" button and choose a video file from your device in one of the supported formats (.mp4, .mov, .avi, .flv, . wmv).
+    1. **Envie um arquivo de vídeo:** Clique no botão "Enviar um arquivo de vídeo" e escolha um arquivo de vídeo do seu dispositivo em um dos formatos suportados (.mp4, .mov, .avi, .flv, . wmv).
     
-    2. **Insert a YouTube Link:** If you prefer, you can simply enter the YouTube video link in the "Insert a YouTube Link" input field.
+     2. **Inserir um link do YouTube:** Se preferir, você pode simplesmente inserir o link do vídeo do YouTube no campo de entrada "Inserir um link do YouTube".
     
-    3. **Convert to MP3:** After uploading the video file or entering the YouTube link, click the "Convert to MP3" button.  The video will be converted to an MP3 audio file.
+     3. **Converter para MP3:** Após enviar o arquivo de vídeo ou inserir o link do YouTube, clique no botão "Converter para MP3".  O vídeo será convertido em um arquivo de áudio MP3.
     
-    4. **MP3 Download:** After conversion, a "Download MP3" button will appear.  Click it to download the MP3 audio file to your device.
+     4. **Download de MP3:** Após a conversão, um botão "Baixar MP3" aparecerá.  Clique nele para baixar o arquivo de áudio MP3 para o seu dispositivo.
     
-    5. **Video Download:** If you have entered a YouTube link, you can also download the original video by clicking the "Download Video" button.
+     5. **Download de vídeo:** Se você inseriu um link do YouTube, também poderá baixar o vídeo original clicando no botão "Baixar vídeo".
     
-    If you have any questions or problems, please contact support.
-    Email: mauro.mn@hotmail.com
+     Se você tiver alguma dúvida ou problema, entre em contato com o suporte.
+     E-mail: mauro.mn@hotmail.com
     """)
