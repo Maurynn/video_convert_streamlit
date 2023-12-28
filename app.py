@@ -78,7 +78,7 @@ with tab1:
                     st.info('Áudio pronto para download, clique no botão abaixo:')
                     st.download_button(label="Download YouTube MP3", data=audio_data, file_name="youtube_output.mp3", mime="audio/mpeg")
 
-            if st.button('Download YouTube Video'):
+            if st.button('Download Vídeo do YouTube'):
                 with st.spinner('Preparando vídeo do YouTube para download...'):
                     sleep(3)
             
