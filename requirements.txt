@@ -1,5 +1,5 @@
 streamlit
-pytube==15.0.0
-moviepy==1.0.3
-yt-dlp==2024.8.6
-googletrans==3.0.0
+pytube
+moviepy
+yt-dlp
+googletrans
