@@ -21,7 +21,7 @@ st.markdown("""
     }
     #MainMenu {
         visibility: hidden;
-    }
+    }#
     footer {
         visibility: hidden;
     }
